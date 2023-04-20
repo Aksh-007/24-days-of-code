@@ -26,7 +26,7 @@ let uniqueString = (str) => {
     let uniqueChar = [];
 
     // looping through string array
-    string.array.forEach(element => {
+    string.forEach(element => {
         // checking if uniqueChar doesnt includes the values then push it in array
         (!uniqueChar.includes(element))
             // if it doesnt contain then push it in uniqueChar
