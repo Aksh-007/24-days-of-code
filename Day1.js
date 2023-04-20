@@ -40,3 +40,52 @@ let uniqueString = (str) => {
 
 }
 console.log(uniqueString('akshay'));
+
+
+
+
+// String reverse without using inbult function
+
+/**
+ * 
+ * @param {str} str 
+ * @returns reverseString []
+ * 
+ * step 1 - converting a string into array using split()
+ * step 2 - creating an array to store the unique value
+ * step 3 - storing a string.length in a variable so that each time the loop 
+ *          iterates doesnt call the length method
+ * step 4 - looping in reverse order
+ * step 5 - pushing the value in raverseString array
+ * step 6 - returning the array and convrting it into string
+ */
+
+let reverseString = (str) => {
+
+    let string = str.split('');
+    let reverseString = [];
+    stringLength = string.length
+    for(i = stringLength;  1 >= 0; i --){
+
+        reverseString.push(stringLength[i-1])
+    }
+    return reverseString.join('');
+}
+
+console.log(reverseString("Madam"))
+
+
+//  string reverse using inbuilt function 
+/**
+ *  step 1 = convert string into Array by using split('')
+ *  strp 2 =  then reverse the the array using reverse();
+ *  step 3 = then convert a array back to string using join() methso
+ */
+
+let reverseString1 = (str) =>{
+    let string = str.split('');
+    let result = string.reverse().join('');
+    return result;
+}
+
+console.log(reverseString1("Akshay"));
