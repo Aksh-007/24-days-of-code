@@ -92,6 +92,8 @@ console.log(functionFilter(['a', 1,2,3,'b',4,'a',1,2,'b']))
 
 // String reverse without reversing of individual words (Array of elements can be reverse with reverse() method but for string it is won't possible so required to split and then join
 
+// input "India is my country"
+// output  "aidnI si ym yrtnuoc"
 
 let reverseStringUsingArray = (str) =>{
         let Array= str.split('');
