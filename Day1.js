@@ -95,7 +95,7 @@ console.log(functionFilter(['a', 1,2,3,'b',4,'a',1,2,'b']))
 
 let reverseStringUsingArray = (str) =>{
         let Array= str.split('');
-        return Array.reverse().join('')
+        return Array.reverse().join('').split(' ').reverse().join(' ')
 }
 
 console.log(reverseStringUsingArray("akshay afnf fnpfn npsfns"))
