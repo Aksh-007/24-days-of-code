@@ -29,14 +29,14 @@ let uniqueString = (str) => {
     string.array.forEach(element => {
         // checking if uniqueChar doesnt includes the values then push it in array
         (!uniqueChar.includes(element))
-        // if it doesnt contain then push it in uniqueChar
-        ? uniqueChar.push(element)
-        // else discard the value
-        :""
+            // if it doesnt contain then push it in uniqueChar
+            ? uniqueChar.push(element)
+            // else discard the value
+            : ""
 
     });
     // here converting the array back to string and returning 
     return uniqueChar.join('');
 
-
 }
+console.log(uniqueString('akshay'));
