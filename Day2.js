@@ -82,18 +82,37 @@ const anagramString = (str1, str2) => {
 }
 anagramString('Army', 'Mary')
 
+
+
 // Q5.Swapping of 2 numbers with third variable
 
 /**
- * step 1 -
- * step 2 -
+ * step 1 - creat third variale a, b , c
+ *      1.1 - assing a value to c 
+ *      1.2 - assign b value to a
+ *      1.3 - assign c value to b
+ * 
  */
 
+// let a=10;
+// let b=20;
+// let c;
+//    c=a;
+//    a=b;
+//    b=c;
+// console.log (a,b)
 
 
 // Q6.Swapping of 2 numbers without third variable
 
 /**
- * step 1 - 
+ * step 1 - WE CAN DO THIS USING ADDITION 
  * step 2 -
  */
+
+let a=10; 
+let b=20;
+   a=a+b //30
+   b=a-b //10
+   a=a-b //20
+console.log (a,b)
