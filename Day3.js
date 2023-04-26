@@ -10,12 +10,13 @@
  * step 3 - if both are same then palindrome else not
  */
 
-const palindrome = (str) =>{
-  let strReverse = str.split('').reverse().join('');
-  if (str === strReverse) {
-    console.log(`${str} String is palindrome`)
+const palindrome = (input) =>{
+    if(typeof input === 'number') input = input.toString();
+  let strReverse = input.split('').reverse().join('');
+  if (input === strReverse) {
+    console.log(`${input} String is palindrome`)
   } else {
-    console.log(`${str} is not palindrome`)
+    console.log(`${input} is not palindrome`)
   }
 }
 
@@ -24,7 +25,9 @@ palindrome('madam')
 
 // Q2.To check the string or number is palindrome or not( ex: 121,madam,anna) using diving length by 2 and then comparing
 
+const palindromeNumber = () =>{
 
+}
 
 
 //Q3.To find longest word from a string using (for of Loop) means iterate by an elements not by indexing
@@ -32,3 +35,12 @@ palindrome('madam')
 
 
 //Q4.To find longest word from a string using functions
+
+
+
+
+// Q5. To check the string or number is palindrome or not( ex: 121,madam,anna) using reverse method {using for loop}
+
+let palindromefor = () =>{
+
+}
