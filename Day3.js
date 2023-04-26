@@ -41,6 +41,31 @@ const palindromeNumber = () =>{
 
 // Q5. To check the string or number is palindrome or not( ex: 121,madam,anna) using reverse method {using for loop}
 
-let palindromefor = () =>{
+/**
+ * 
+ * @param {srting,number} input 
+ * step 1 - check if input is number convert it to string
+ * step 2 - loop through string using for to reverse and store it in Array
+ * step 3 - now using join convert it into string
+ * sep 4 - check whether if input and reverse equal then palindrome 
+ */
+
+const palindromefor = (input) =>{
+    if(typeof input === 'number') input =input.toString();
+
+    let reverseArray = [];
+
+   for (let i = input.length - 1; i >= 0; i--) {
+        reverseArray.push(input[i])
+   }
+   console.log(reverseArray)
+    reverseArray = reverseArray.join('');
+    if(input === reverseArray){
+        console.log(`is palindrome`)
+    }else{
+        console.log(`not palindrome`)
+    }
 
 }
+
+palindromefor(121)
