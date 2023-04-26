@@ -10,14 +10,14 @@
  * step 3 - if both are same then palindrome else not
  */
 
-const palindrome = (input) =>{
-    if(typeof input === 'number') input = input.toString();
-  let strReverse = input.split('').reverse().join('');
-  if (input === strReverse) {
-    console.log(`${input} String is palindrome`)
-  } else {
-    console.log(`${input} is not palindrome`)
-  }
+const palindrome = (input) => {
+    if (typeof input === 'number') input = input.toString();
+    let strReverse = input.split('').reverse().join('');
+    if (input === strReverse) {
+        console.log(`${input} String is palindrome`)
+    } else {
+        console.log(`${input} is not palindrome`)
+    }
 }
 
 palindrome('madam')
@@ -25,14 +25,30 @@ palindrome('madam')
 
 // Q2.To check the string or number is palindrome or not( ex: 121,madam,anna) using diving length by 2 and then comparing
 
-const palindromeNumber = () =>{
+const palindromeNumber = (input) => {
+
+    if (typeof input === 'number') input = input.toString()
+
 
 }
 
 
 //Q3.To find longest word from a string using (for of Loop) means iterate by an elements not by indexing
 
+const longestWord = (input) => {
+     input = input.split(' ');
+    let longestWord = '';
 
+    for (const word of input) {
+        console.log(word)
+        if (longestWord.length < word.length) {
+            longestWord = word;
+        } 
+    }
+    return longestWord;
+}
+
+longestWord('akshay is a good prorammer')
 
 //Q4.To find longest word from a string using functions
 
@@ -50,19 +66,19 @@ const palindromeNumber = () =>{
  * sep 4 - check whether if input and reverse equal then palindrome 
  */
 
-const palindromefor = (input) =>{
-    if(typeof input === 'number') input =input.toString();
+const palindromefor = (input) => {
+    if (typeof input === 'number') input = input.toString();
 
     let reverseArray = [];
 
-   for (let i = input.length - 1; i >= 0; i--) {
+    for (let i = input.length - 1; i >= 0; i--) {
         reverseArray.push(input[i])
-   }
-   console.log(reverseArray)
+    }
+    console.log(reverseArray)
     reverseArray = reverseArray.join('');
-    if(input === reverseArray){
+    if (input === reverseArray) {
         console.log(`is palindrome`)
-    }else{
+    } else {
         console.log(`not palindrome`)
     }
 
