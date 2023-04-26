@@ -28,12 +28,35 @@ palindrome('madam')
 const palindromeNumber = (input) => {
 
     if (typeof input === 'number') input = input.toString()
-
+    let len = input.length
+    for (i=0; i<len/2;i++){
+        if (input[i]!==input[len-1-i]){
+            console.log("Not Palindrome")
+        }
+        else{
+            console.log(" Palindrome")
+       }
+      }
 
 }
+palindromeNumber(252)
 
 
 //Q3.To find longest word from a string using (for of Loop) means iterate by an elements not by indexing
+
+/**
+ * 
+ * @param {string} input 
+ * @returns longestWord
+ * 
+ * step 1 = split(' ') our string into individual 
+ *   example = "akshay is good prorammer".split(' ') 
+ *      o/p = ['akshay','is', 'good', 'programmer']
+ * 
+ * step 2 - loop over them and check if length is greater 
+ * step 3 - length is greater then assing it to longestWord
+ * step 4 - return back it
+ */
 
 const longestWord = (input) => {
      input = input.split(' ');
@@ -47,11 +70,26 @@ const longestWord = (input) => {
     }
     return longestWord;
 }
-
+ 
 longestWord('akshay is a good prorammer')
 
-//Q4.To find longest word from a string using functions
+//Q4.To find longest word from a string using functions{like sort}
 
+/**
+ * 
+ * @param {string} input
+ * 
+ * step 1 -  
+ */
+const longestWordSort = (input)=>{
+
+    input = input.split(' ')
+    let longestWord = input.sort((a,b)=> b.length - a.length);
+    console.log(longestWord[0])
+    return longestWord[0]
+}
+
+longestWordSort('akshay is a good prorammer')
 
 
 
