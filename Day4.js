@@ -80,6 +80,16 @@ longestCommonString();
 
 // Q3. To find vowels and its count in a given string
 
+/**
+ * 
+ * @param {string} input 
+ * @returns {object} vowels
+ * 
+ * step 1 - creating a vowels object where we can store value
+ * step 2 - iterating over input string and converting them into loweCase
+ * step 3 - and by using switch case increament the vowels value
+ * step 4 - returning the object 
+ */
 const vowels = (input) => {
     let vowels = {
         a: 0,
@@ -122,4 +132,29 @@ const vowels = (input) => {
 
 vowels("akshay is a good programmer");
 
+
+
 // Q4. To find character occurance from the string
+
+/**
+ * 
+ * @param {string} string 
+ * @param {charcter} alphabet 
+ * @returns how many times its appear
+ * 
+ * step 1 - create count input to store count
+ * step 2 - iterate over string
+ * step 3 - if char === given alphabet then simply increase the count 
+ */
+const occuranceCharacter = (string , alphabet) =>{
+    let count = 0;
+
+    for (const char of string) {
+        if (char === alphabet) {
+            count ++;
+        }
+    }
+    return count;
+}
+
+occuranceCharacter('akshay', 'a')
