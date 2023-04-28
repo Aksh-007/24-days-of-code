@@ -157,4 +157,4 @@ const occuranceCharacter = (string , alphabet) =>{
     return count;
 }
 
-occuranceCharacter('akshay', 'a')
+occuranceCharacter('akshay barapatre', 'a')
