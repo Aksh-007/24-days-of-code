@@ -1,6 +1,25 @@
 // Q1.To find the largest pair of the 2 elements using indexing with sorted elements
 
+/**
+ * 
+ * @param {array} array 
+ * @returns largest and second largest
+ * 
+ * step 1 - sort the given array using sort method
+ * step 2 - now the largest and second largest is at the end 
+ * step 3 - extrascting the value from sortedArray
+ * step 4 - return back the largest and secondlargest
+ */
+const largestSorted = (array) => {
 
+    let sortedArray = array.sort((a, b) => a - b);
+    console.log(sortedArray)
+    let largest = sortedArray[sortedArray.length - 1]
+    let secondLargest = sortedArray[sortedArray.length - 2]
+    return [largest, secondLargest]
+}
+
+largestSorted([20, 10, 2, 4, 5, 30, 14])
 
 // Q2.To find the index of an element from an array
 
@@ -43,3 +62,18 @@ const findIndexUsingFor = (array, element) => {
 findIndexUsingFor([20, 50, 80, 40], 20);
 
 //Q3.Fibonacci Series (0,1,1,2,3,5,8,13....)
+
+
+function fibonacci(number) {
+    let fibonacciValue = [0, 1]; // start with the first two numbers in the fibonacciValue
+    for (let i = 2; i < number; i++) { // loop from the third number up to the nth number
+      let nextNumber = fibonacciValue[i - 1] + fibonacciValue[i - 2]; // add the previous two numbers together
+      fibonacciValue.push(nextNumber); // add the next number to the fibonacciValue
+    }
+    return fibonacciValue; // return the full fibonacciValue
+  }
+  
+  console.log(fibonacci(5));
+  // [0,1,1,2,3] 
+
+
